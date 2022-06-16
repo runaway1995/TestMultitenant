@@ -23,19 +23,19 @@ public class ApplicationFixture : IAsyncLifetime
 			AllowAutoRedirect = false
 		});
 
-		_scope = application.Services.GetAutofacRoot().Resolve<MultitenantContainer>();
+		// _scope = application.Services.GetAutofacRoot().Resolve<MultitenantContainer>();
 	}
 
 	public async Task InitializeAsync()
 	{
-		AppServices.SetContainer(_scope);
+		// AppServices.SetContainer(_scope);
 
-		Thread.Sleep(4000);
+		// Thread.Sleep(4000);
 	}
 
 	public async Task DisposeAsync()
 	{
-		await _scope!.DisposeAsync();
+		// await _scope!.DisposeAsync();
 		_client.Dispose();
 	}
 
@@ -44,7 +44,7 @@ public class ApplicationFixture : IAsyncLifetime
 	{
 		using var requestMessage = new HttpRequestMessage(HttpMethod.Get, url);
 		if (tenantId != null)
-			requestMessage.Headers.Add("CountryCode", tenantId.ToString()!.ToLower());
+			requestMessage.Headers.Add("TenantId", tenantId.ToString());
 
 		var response = await _client.SendAsync(requestMessage);
 
