@@ -16,10 +16,10 @@ public class TestController : ControllerBase
 	}
 
 	[HttpGet]
-	public async Task<int> Test(int crmId, CancellationToken cancellationToken)
+	public async Task<ActionResult> Test(int crmId, CancellationToken cancellationToken)
 	{
 		var someService = _scope.Resolve<ISomeService>();
 
-		return someService.SomeFunc();
+		return Ok(someService.SomeFunc());
 	}
 }

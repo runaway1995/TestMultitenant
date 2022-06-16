@@ -1,6 +1,8 @@
-﻿namespace TestMultitenant.SomeServices.Interfaces;
+﻿using TestMultitenant.SomeServices.Models;
+
+namespace TestMultitenant.SomeServices.Interfaces;
 
 public interface ISomeService
 {
-	int SomeFunc();
+	SomeData SomeFunc();
 }

@@ -1,11 +1,12 @@
 ﻿using TestMultitenant.SomeServices.Interfaces;
+using TestMultitenant.SomeServices.Models;
 
 namespace TestMultitenant.SomeServices;
 
 public class SomeServiceTenant2: ISomeService
 {
-	public int SomeFunc()
+	public SomeData SomeFunc()
 	{
-		return 2;
+		return new SomeData(2);
 	}
 }

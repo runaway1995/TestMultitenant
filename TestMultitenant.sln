@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMultitenant", "TestMultitenant\TestMultitenant.csproj", "{A0204045-BEDF-4316-BF7C-8F53FC3E6399}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationTests", "IntegrationTests\IntegrationTests.csproj", "{943D2EB8-9977-4D83-ADBB-7CECC94E53A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{A0204045-BEDF-4316-BF7C-8F53FC3E6399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0204045-BEDF-4316-BF7C-8F53FC3E6399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0204045-BEDF-4316-BF7C-8F53FC3E6399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943D2EB8-9977-4D83-ADBB-7CECC94E53A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943D2EB8-9977-4D83-ADBB-7CECC94E53A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943D2EB8-9977-4D83-ADBB-7CECC94E53A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943D2EB8-9977-4D83-ADBB-7CECC94E53A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
